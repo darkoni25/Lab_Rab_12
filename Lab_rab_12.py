@@ -14,18 +14,17 @@ countries_data = [
     {"name": "ПАР", "area": 1219090, "population": 59308690, "continent": "Африка"}
 ]
 
-
-# Функція для запису JSON-файлу
+# Функція для запису JSON-файлу як об'єкт з ключем 'countries'
 def save_json(data, filename="countries.json"):
+    data_object = {"countries": data}  # Обгортка в об'єкт з ключем 'countries'
     with open(filename, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
-
+        json.dump(data_object, f, ensure_ascii=False, indent=4)
 
 # Функція для завантаження JSON-файлу
 def load_json(filename="countries.json"):
     with open(filename, "r", encoding="utf-8") as f:
-        return json.load(f)
-
+        data = json.load(f)
+    return data["countries"]  # Повертаємо тільки список країн
 
 # Функція для виведення вмісту JSON-файлу
 def display_countries():
@@ -34,11 +33,9 @@ def display_countries():
     for country in data:
         print(country)
 
-
 # Функція для перевірки наявності країни за назвою
 def country_exists(name, data):
     return any(country["name"].lower() == name.lower() for country in data)
-
 
 # Функція для додавання нової країни
 def add_country():
@@ -60,7 +57,6 @@ def add_country():
     save_json(data)
     print("Країну додано успішно!")
 
-
 # Функція для видалення країни за назвою
 def delete_country():
     data = load_json()
@@ -74,7 +70,6 @@ def delete_country():
     data = [country for country in data if country["name"].lower() != name.lower()]
     save_json(data)
     print(f"Країну '{name}' видалено успішно!")
-
 
 # Функція для пошуку країни за полем
 def search_country():
@@ -90,7 +85,6 @@ def search_country():
             print(country)
     else:
         print("Країн з такими даними не знайдено.")
-
 
 # Функція для пошуку країн в Африці або Азії та запису результату в окремий JSON файл
 def filter_asia_africa():
@@ -108,7 +102,6 @@ def filter_asia_africa():
         print("Результати також записані в файл 'asia_africa_countries.json'")
     else:
         print("Країн з Африки або Азії не знайдено.")
-
 
 # Головна функція для діалогового режиму
 def main():
@@ -140,7 +133,6 @@ def main():
             break
         else:
             print("Невірний вибір. Спробуйте ще раз.")
-
 
 # Виклик головної функції
 if __name__ == "__main__":
