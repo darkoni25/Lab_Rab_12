@@ -1,62 +1,64 @@
-[
-    {
-        "name": "Україна",
-        "area": 603500,
-        "population": 41902416,
-        "continent": "Європа"
-    },
-    {
-        "name": "Єгипет",
-        "area": 1002450,
-        "population": 102334404,
-        "continent": "Африка"
-    },
-    {
-        "name": "Канада",
-        "area": 9984670,
-        "population": 38008005,
-        "continent": "Північна Америка"
-    },
-    {
-        "name": "Індія",
-        "area": 3287263,
-        "population": 1393409038,
-        "continent": "Азія"
-    },
-    {
-        "name": "Франція",
-        "area": 643801,
-        "population": 65273511,
-        "continent": "Європа"
-    },
-    {
-        "name": "Кенія",
-        "area": 580367,
-        "population": 53771296,
-        "continent": "Африка"
-    },
-    {
-        "name": "Китай",
-        "area": 9596961,
-        "population": 1444216107,
-        "continent": "Азія"
-    },
-    {
-        "name": "Бразилія",
-        "area": 8515767,
-        "population": 212559417,
-        "continent": "Південна Америка"
-    },
-    {
-        "name": "Німеччина",
-        "area": 357022,
-        "population": 83240525,
-        "continent": "Європа"
-    },
-    {
-        "name": "ПАР",
-        "area": 1219090,
-        "population": 59308690,
-        "continent": "Африка"
-    }
-]
+{
+    "countries": [
+        {
+            "name": "Україна",
+            "area": 603500,
+            "population": 41902416,
+            "continent": "Європа"
+        },
+        {
+            "name": "Єгипет",
+            "area": 1002450,
+            "population": 102334404,
+            "continent": "Африка"
+        },
+        {
+            "name": "Канада",
+            "area": 9984670,
+            "population": 38008005,
+            "continent": "Північна Америка"
+        },
+        {
+            "name": "Індія",
+            "area": 3287263,
+            "population": 1393409038,
+            "continent": "Азія"
+        },
+        {
+            "name": "Франція",
+            "area": 643801,
+            "population": 65273511,
+            "continent": "Європа"
+        },
+        {
+            "name": "Кенія",
+            "area": 580367,
+            "population": 53771296,
+            "continent": "Африка"
+        },
+        {
+            "name": "Китай",
+            "area": 9596961,
+            "population": 1444216107,
+            "continent": "Азія"
+        },
+        {
+            "name": "Бразилія",
+            "area": 8515767,
+            "population": 212559417,
+            "continent": "Південна Америка"
+        },
+        {
+            "name": "Німеччина",
+            "area": 357022,
+            "population": 83240525,
+            "continent": "Європа"
+        },
+        {
+            "name": "ПАР",
+            "area": 1219090,
+            "population": 59308690,
+            "continent": "Африка"
+        }
+    ]
+}
