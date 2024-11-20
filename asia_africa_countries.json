@@ -1,32 +1,34 @@
-[
-    {
-        "name": "Єгипет",
-        "area": 1002450,
-        "population": 102334404,
-        "continent": "Африка"
-    },
-    {
-        "name": "Індія",
-        "area": 3287263,
-        "population": 1393409038,
-        "continent": "Азія"
-    },
-    {
-        "name": "Кенія",
-        "area": 580367,
-        "population": 53771296,
-        "continent": "Африка"
-    },
-    {
-        "name": "Китай",
-        "area": 9596961,
-        "population": 1444216107,
-        "continent": "Азія"
-    },
-    {
-        "name": "ПАР",
-        "area": 1219090,
-        "population": 59308690,
-        "continent": "Африка"
-    }
-]
+{
+    "countries": [
+        {
+            "name": "Єгипет",
+            "area": 1002450,
+            "population": 102334404,
+            "continent": "Африка"
+        },
+        {
+            "name": "Індія",
+            "area": 3287263,
+            "population": 1393409038,
+            "continent": "Азія"
+        },
+        {
+            "name": "Кенія",
+            "area": 580367,
+            "population": 53771296,
+            "continent": "Африка"
+        },
+        {
+            "name": "Китай",
+            "area": 9596961,
+            "population": 1444216107,
+            "continent": "Азія"
+        },
+        {
+            "name": "ПАР",
+            "area": 1219090,
+            "population": 59308690,
+            "continent": "Африка"
+        }
+    ]
+}
